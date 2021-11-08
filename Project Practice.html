@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt 🥛</title>
+    <style>
+      body {
+        background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+        color: #fff;
+        width: 50%;
+        margin: 200px auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #7d51e8;
+        color: #7d51e8;
+        padding: 20px;
+        border-radius: 4px;
+      }
+      h2 {
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 17px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #7d51e8;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      .learn-more {
+        font-size: 12px;
+        color: #7d51e8;
+        text-decoration: none;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Yogurt</h1>
+      <h2>Especially greek yogurt</h2>
+      <hr />
+      <img
+        src="https://images.medicinenet.com/images/article/main_image/is-greek-yogurt-good-for-you.jpg"
+        alt="Greek Yogurt"
+        width="600"
+      />
+      <hr />
+      <p>
+        Strained yogurt, <strong>Greek yogurt</strong>, yogurt cheese, sack
+        yogurt, or kerned yogurt is yogurt that has been strained to remove most
+        of its whey, resulting in a thicker consistency than regular unstrained
+        yogurt, while still preserving the distinctive sour taste of yogurt.
+        <br />
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Strained_yogurt"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on wikipedia
+      </a>
+      <p class="buy-button">
+        <button>👉🏻 Buy Greek Yogurt</button>
+      </p>
+
+      <p class="footer">
+        This page was built by
+        <a href="https://www.delac.io/"> Matt Delac</a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let emoji = prompt("What is your favorite emoji?");
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email.  Meanwhile, have a lot of yogurt! " +
+            emoji
+        );
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
